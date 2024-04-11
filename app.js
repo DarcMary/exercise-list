@@ -75,3 +75,31 @@ function isPalindrome(string) {
     return reverseString(string) == string
 }
 console.log(isPalindrome("dad"))
+
+//Exercício 4.1: Contagem de Dígitos
+//Crie um algoritmo que conte quantos dígitos um número inteiro positivo `n` possui. Pense sobre a complexidade temporal e espacial da sua abordagem.
+function countDigits(n) {
+    return n.toString().length
+}
+console.log(countDigits(5055))
+
+//Exercício 4.2: Inversão de String
+//Implemente um algoritmo que inverte uma string.'. Discuta a complexidade temporal e espacial do algoritmo.
+function stringReverse(string) {
+    let stringReversed = ""
+    for (let i = string.length - 1; i >= 0; i--) {
+        stringReversed += string[i]
+    }
+    return stringReversed
+}
+console.log(stringReverse("Thalys"))
+
+//Exercício 4.3: Checagem de Anagramas
+//Escreva um algoritmo para verificar se duas strings são anagramas uma da outra (ou seja, se elas têm os mesmos caracteres, mas em ordens diferentes). Considere a complexidade temporal e espacial do seu algoritmo
+function checkString(string1, string2) {
+    let string1Ordered = string1.split("").sort().join()
+    let string2Ordered = string2.split("").sort().join()
+    return string1Ordered == string2Ordered
+}
+
+console.log(checkString("ola", "Thalys"));
