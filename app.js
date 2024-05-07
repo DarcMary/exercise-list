@@ -92,7 +92,7 @@ function stringReverse(string) {
     }
     return stringReversed
 }
-console.log(stringReverse("Thalys"))
+console.log(stringReverse("Darc"))
 
 //Exercício 4.3: Checagem de Anagramas
 //Escreva um algoritmo para verificar se duas strings são anagramas uma da outra (ou seja, se elas têm os mesmos caracteres, mas em ordens diferentes). Considere a complexidade temporal e espacial do seu algoritmo
@@ -102,4 +102,4 @@ function checkString(string1, string2) {
     return string1Ordered == string2Ordered
 }
 
-console.log(checkString("ola", "Thalys"));
+console.log(checkString("ola", "Darc"));
